@@ -3,11 +3,15 @@ import React from "react";
 const index = () => {
   return (
     <div>
-      <div className="bg-lime-600 p-6">
-        <h1>Todo List</h1>
-        <button>Add +</button>
+      <div className="flex items-center justify-center mt-8">
+        <div className="flex space-x-4 items-center">
+          <h1 className="text-4xl font-bold">Todo List</h1>
+          <button className="rounded border-2 border-black bg-green-400 p-4 text-white">
+            Add +
+          </button>
+        </div>
+        {/* will be pulling info from django backend */}
       </div>
-      {/* will be pulling info from django backend */}
     </div>
   );
 };
